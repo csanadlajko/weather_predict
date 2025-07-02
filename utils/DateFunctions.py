@@ -3,6 +3,8 @@ from utils.CommonConstants import CommonConstants
 
 class DateFunctions():
     COMMON_DATE_FORMAT: str = "%Y.%m.%d"
+    TODAY: int = datetime.datetime.today().day
+    CURRENT_MONTH: int = datetime.datetime.today().month
     
     def __init__(self, start_date: str = CommonConstants.START_DATE, end_date: str = CommonConstants.END_DATE):
         self.start_date = self.parseStringDate(start_date)
